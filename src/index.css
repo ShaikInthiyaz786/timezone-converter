@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+.time-zone-converter {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.time-zone-converter.dark-mode {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+h1 {
+  text-align: center;
+  color: inherit;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.controls button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 5px;
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+.time-zone-display {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.time-zone-display.dark-mode {
+  background-color: #495057;
+  color: #f8f9fa;
+}
+
+.time-zone-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.time-zone-header select {
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 75%;
+  background-color: inherit;
+  color: inherit;
+}
+
+.time-zone-header button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.time-zone-header button:hover {
+  background-color: #c82333;
+}
+
+.time-slider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.time-slider input[type="range"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.time-slider span {
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+.shareable-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.shareable-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.shareable-link a:hover {
+  text-decoration: underline;
+}
+
+.add-time-zone select {
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 50%;
+  background-color: inherit;
+  color: inherit;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
